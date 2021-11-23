@@ -149,6 +149,45 @@
         <script>
             AOS.init();
         </script>
+        <script src="vendor/vue/vue.js"></script>
+        <script>
+            var galery = new Vue({
+                el: '#galery',
+                mounted() {
+                    AOS.init();
+                },
+                data: {
+                    activePhoto: 1,
+                    photos: [
+                        {
+                            id: 1,
+                            url: 'images/products-detail-1.jpg',
+                        },
+                        {
+                            id: 2,
+                            url: 'images/products-detail-2.jpg',
+                        },
+                        {
+                            id: 3,
+                            url: 'images/products-detail-3.jpg',
+                        },
+                        {
+                            id: 4,
+                            url: 'images/products-detail-4.jpg',
+                        },
+                        {
+                            id: 5,
+                            url: 'images/products-detail-5.jpg',
+                        },
+                    ],
+                },
+                methods: {
+                    changeActive(id) {
+                        this.activePhoto = id;
+                    },
+                },
+            });
+        </script>
         <script src="/script/navbar-scroll.js"></script>
     </body>
 </html>
