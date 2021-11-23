@@ -10905,7 +10905,7 @@ footer p {
   border: 2px solid transparent;
 }
 
-.page-details .thumbnail-image:hover, .page-details .thumbnail-image:active {
+.page-details .thumbnail-image:hover, .page-details .thumbnail-image.active {
   border: 2px solid #ff7158;
 }
 
