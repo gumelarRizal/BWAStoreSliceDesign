@@ -350,7 +350,36 @@
                             <hr />
                         </div>
                         <div class="col-h2">
-                            <h2 class="mb-4">Payment Information</h2>
+                            <h2 class="mb-1">Payment Informations</h2>
+                        </div>
+                    </div>
+                    <div class="row" data-aos="fade-up" data-aos-delay="200">
+                        <div class="col-4 col-md-2">
+                            <div class="product-title">$10</div>
+                            <div class="product-subtitle">Country Tax</div>
+                        </div>
+                        <div class="col-4 col-md-3">
+                            <div class="product-title">$280</div>
+                            <div class="product-subtitle">
+                                Product Insurance
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <div class="product-title">$580</div>
+                            <div class="product-subtitle">Ship to Jakarta</div>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <div class="product-title text-success">
+                                $392,409
+                            </div>
+                            <div class="product-subtitle">Total</div>
+                        </div>
+                        <div class="col-8 col-md-3">
+                            <a
+                                href=""
+                                class="btn btn-success mt-4 px-4 btn-block"
+                                >Checkout Now
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -374,41 +403,6 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
-        </script>
-        <script src="vendor/vue/vue.js"></script>
-        <script>
-            var galery = new Vue({
-                el: '#galery',
-                mounted() {
-                    AOS.init();
-                },
-                data: {
-                    activePhoto: 0,
-                    photos: [
-                        {
-                            id: 1,
-                            url: 'images/products-detail-1.jpg',
-                        },
-                        {
-                            id: 2,
-                            url: 'images/products-detail-2.jpg',
-                        },
-                        {
-                            id: 3,
-                            url: 'images/products-detail-3.jpg',
-                        },
-                        {
-                            id: 4,
-                            url: 'images/products-detail-4.jpg',
-                        },
-                    ],
-                },
-                methods: {
-                    changeActive(id) {
-                        this.activePhoto = id;
-                    },
-                },
-            });
         </script>
         <script src="/script/navbar-scroll.js"></script>
     </body>
