@@ -28,10 +28,10 @@
                         <a href="dashboard-transactions.html" class="list-group-item list-group-item-action">
                             Transaction
                         </a>
-                        <a href="dashboard-settings.html" class="list-group-item list-group-item-action active">
-                            Settings
+                        <a href="dashboard-settings.html" class="list-group-item list-group-item-action"> Settings </a>
+                        <a href="dashboard-Account.html" class="list-group-item list-group-item-action active">
+                            My Account
                         </a>
-                        <a href="dashboard-Account.html" class="list-group-item list-group-item-action"> My Account </a>
                         <a href="index.html" class="list-group-item list-group-item-action"> Sign Out </a>
                     </div>
                 </div>
@@ -100,8 +100,8 @@
                     <div class="section-content section-dashboard-home" data-aos="fade-up">
                         <div class="container-fluid">
                             <div class="dashboard-heading">
-                                <h2 class="dashboard-title">Store Settings</h2>
-                                <p class="dashboard-subtitle">Make store that profitable</p>
+                                <h2 class="dashboard-title">My Account</h2>
+                                <p class="dashboard-subtitle">Update your current profile</p>
                             </div>
                             <div class="dashboard-content">
                                 <div class="row">
@@ -112,68 +112,105 @@
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="">Nama Toko </label>
-                                                                <input type="text" class="form-control" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group" v-if="is_store_open">
-                                                                <label for="">Kategori</label>
-                                                                <select name="category" class="form-control">
-                                                                    <option value="" disabled>Select Category</option>
-                                                                </select>
+                                                                <label for="name">Your name</label>
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="name"
+                                                                    name="name"
+                                                                    value="Rizal gumelar"
+                                                                />
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="">Store</label>
-                                                                <p class="text-muted">
-                                                                    Apakah saat ini toko Anda buka??
-                                                                </p>
-                                                                <div
-                                                                    class="
-                                                                        custom-control
-                                                                        custom-radio
-                                                                        custom-control-inline
-                                                                    "
+                                                                <label for="email">Your Email</label>
+                                                                <input
+                                                                    type="email"
+                                                                    class="form-control"
+                                                                    id="email"
+                                                                    name="email"
+                                                                    value="mrizalgumelar@gmail.com"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="addressOne">Address 1</label>
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="addressOne"
+                                                                    name="addressOne"
+                                                                    value="Jl. Warung Awi"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="addressTwo">Address 2</label>
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="addressTwo"
+                                                                    name="addressTwo"
+                                                                    value="Jl. Papanggungan"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label for="Province">Province</label>
+                                                                <select
+                                                                    name="province"
+                                                                    id="province"
+                                                                    class="form-control"
                                                                 >
-                                                                    <input
-                                                                        type="radio"
-                                                                        class="custom-control-input"
-                                                                        name="is_store_open"
-                                                                        id="openStoreTrue"
-                                                                        v-model="is_store_open"
-                                                                        :value="true"
-                                                                    />
-                                                                    <label
-                                                                        for="openStoreTrue"
-                                                                        class="custom-control-label"
-                                                                    >
-                                                                        Buka
-                                                                    </label>
-                                                                </div>
-                                                                <div
-                                                                    class="
-                                                                        custom-control
-                                                                        custom-radio
-                                                                        custom-control-inline
-                                                                    "
-                                                                >
-                                                                    <input
-                                                                        type="radio"
-                                                                        class="custom-control-input"
-                                                                        name="is_store_open"
-                                                                        id="openStoreFalse"
-                                                                        v-model="is_store_open"
-                                                                        :value="false"
-                                                                    />
-                                                                    <label
-                                                                        for="openStoreFalse"
-                                                                        class="custom-control-label"
-                                                                    >
-                                                                        Sementara tutup
-                                                                    </label>
-                                                                </div>
+                                                                    <option value="jabar">Jawa Barat</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label for="city">City</label>
+                                                                <select name="city" id="city" class="form-control">
+                                                                    <option value="bandung">Bandung</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label for="PostalCode">Postal Code</label>
+                                                                <input
+                                                                    type="text"
+                                                                    name="postalCode"
+                                                                    id="popstalCode"
+                                                                    class="form-control"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="country">Country</label>
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="country"
+                                                                    name="country"
+                                                                    value="Indonesia"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="mobile">Mobile</label>
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="mobile"
+                                                                    name="mobile"
+                                                                    value="+6282115420020"
+                                                                />
                                                             </div>
                                                         </div>
                                                     </div>
